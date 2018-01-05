@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Newtonsoft.Json;
+
 using JsonAbstractTest.Converters;
 
 namespace JsonAbstractTest.Models
@@ -11,6 +13,7 @@ namespace JsonAbstractTest.Models
     /// <summary>
     /// <see cref="ISerializableSample"/> クラスを継承するモデル クラスの例です。
     /// </summary>
+    [JsonConverter(typeof(ConcretedTypeConverter<SerializableModelFoo, SerializableSampleConverter>))]
     public class SerializableModelFoo : ISerializableSample
     {
         // 非公開フィールド

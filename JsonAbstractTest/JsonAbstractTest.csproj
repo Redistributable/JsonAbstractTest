@@ -36,6 +36,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converters\ConcretedTypeConverter.cs" />
     <Compile Include="Converters\SerializableSampleConverter.cs" />
     <Compile Include="MainClass.cs" />
     <Compile Include="Models\ISerializableSample.cs" />

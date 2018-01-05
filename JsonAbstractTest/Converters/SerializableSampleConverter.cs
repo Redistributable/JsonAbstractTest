@@ -15,7 +15,8 @@ namespace JsonAbstractTest.Converters
 
 
     /// <summary>
-    /// <see cref="ISerializableSample"/> に付与されるインターフェイスです。
+    /// <see cref="ISerializableSample"/> に付与される属性です。
+    /// JSON.NET 用のコンバータを実装します．
     /// </summary>
     public class SerializableSampleConverter : JsonConverter
     {
